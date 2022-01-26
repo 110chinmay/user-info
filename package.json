@@ -2,7 +2,7 @@
   "name": "user-info",
   "version": "0.1.0",
   "private": true,
-  "home": "https://110chinmay.github.io/user-info",
+  "home": "https://github.com/user-info/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
