@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import UserForm from "./components/UserForm";
+import UserList from "./components/UserList";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [listDataVal, setListDataVal] = useState([]);
+  const formData = (value) => {
+    setListDataVal((prevValue) => {
+      return [...prevValue, value];
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="main">
+        <h1 className="title-content">User Details</h1>
+        <UserForm userFormData={formData} />
+        <UserList ListDatas={listDataVal} setListDataVal={setListDataVal} />
+      </div>
+    </>
   );
-}
+};
 
 export default App;

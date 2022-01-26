@@ -1,0 +1,10 @@
+.userList {
+  background-color: #222541;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 320px;
+  color: whitesmoke;
+  margin: auto;
+  margin-top: 5px;
+}
